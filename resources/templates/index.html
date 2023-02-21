@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LNU connection</title>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="left-nav">
+    <div class="sidebar-top">
+      <span class="shrink-btn">
+        <i class='bx bx-chevron-left'></i>
+      </span>
+      <div class="logo-container">
+        <img src="./img/Lnu logo 2.0.png" class="logo" alt="">
+      </div>
+      <!-- <h3 class="hide">CONNECTION</h3> -->
+    </div>
+
+    <!-- <div class="search">
+      <i class='bx bx-search'></i>
+      <input type="text" class="hide" placeholder="Quick Search ...">
+    </div> -->
+
+    <div class="sidebar-links">
+      <ul>
+        <div class="active-tab"></div>
+        <li class="tooltip-element" data-tooltip="0">
+          <a href="#" class="active" data-active="0">
+            <div class="icon">
+              <i class='bx bxs-dashboard'></i>
+              <i class='bx bxs-dashboard'></i>
+            </div>
+            <span class="link hide">Головна</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="1">
+          <a href="#" data-active="1">
+            <div class="icon">
+              <i class='bx bx-bar-chart-square'></i>
+              <i class='bx bxs-bar-chart-square'></i>
+            </div>
+            <span class="link hide">Успішність</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="2">
+          <a href="#" data-active="2">
+            <div class="icon">
+              <i class='bx bx-world'></i>
+              <i class='bx bx-world'></i>
+            </div>
+            <span class="link hide">Форум</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="3">
+          <a href="#" data-active="3">
+            <div class="icon">
+              <i class='bx bx-news' ></i>
+              <i class='bx bxs-news' ></i>
+            </div>
+            <span class="link hide">Новини</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="4">
+          <a href="#" data-active="4">
+            <div class="icon">
+              <i class='bx bx-notepad'></i>
+              <i class='bx bxs-notepad'></i>
+            </div>
+            <span class="link hide">Розклад</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="5">
+          <a href="#" data-active="5">
+            <div class="icon">
+              <i class='bx bxs-contact' ></i>
+              <i class='bx bxs-contact' ></i>
+            </div>
+            <span class="link hide">Контакти</span>
+          </a>
+        </li>
+        <li class="tooltip-element" data-tooltip="6">
+          <a href="#" data-active="6">
+            <div class="icon">
+              <i class='bx bx-map' ></i>
+              <i class='bx bxs-map' ></i>
+            </div>
+            <span class="link hide">Карта</span>
+          </a>
+        </li>
+        <div class="tooltip">
+          <span class="show">Головна</span>
+          <span>Успішність</span>
+          <span>Форум</span>
+          <span>Новини</span>
+          <span>Розклад</span>
+          <span>Контакти</span>
+          <span>Карта</span>
+        </div>
+      </ul>
+    </div>
+
+    <div class="sidebar-footer">
+      <a href="#" class="account tooltip-element" data-tooltip="0">
+        <i class='bx bx-user'></i>
+      </a>
+      <div class="admin-user tooltip-element" data-tooltip="1">
+        <div class="admin-profile hide">
+          <img src="./img/petro.jpg" alt="">
+          <div class="admin-info">
+            <h3>Pavlo Kupyn</h3>
+            <h5>Admin</h5>
+          </div>
+        </div>
+        <a href="#" class="log-out">
+          <i class='bx bx-log-out'></i>
+        </a>
+      </div>
+      <div class="tooltip">
+        <span class="show">Pavlo Kupyn</span>
+        <span>Logout</span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h4 class="meet">Привіт!</h4>
+    <h1>Твій план на сьогодні</h1>
+    <!-- <img class="cactus" src="img/cactus-svg.png" alt="green cactus made with primitive shapes"> -->
+    <p class="copyright">
+      &copy; 2023 - <span>LNUconnection</span> All Rights Reserved.
+    </p>
+  </main>
+
+  <nav class="right-nav">
+   <div class="right-nav-content"> 
+      <div class="next-task">
+        <h4 class="list-name">Наступні заняття</h4>
+        <ul>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-bell'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Лекція з Програмування</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">8:30</h6>
+                <a href="#" id="link-to-meeting">Посилання на зустріч</a>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-bell'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Лекція з Програмування</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">8:30</h6>
+                <a href="#" id="link-to-meeting">Посилання на зустріч</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="last-activity">
+        <h4>Остання активність</h4>
+        <ul>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-file'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Submisson NLP Programming</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">04 Січ, 9:20</h6>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-file'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Submisson NLP Programming</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">04 Січ, 9:20</h6>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-file'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Submisson NLP Programming</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">04 Січ, 9:20</h6>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-file'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Submisson NLP Programming</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">04 Січ, 9:20</h6>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-file'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Submisson NLP Programming</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">04 Січ, 9:20</h6>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="last-news">
+        <h4 class="list-name">Останні новини</h4>
+        <ul>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-bell'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Лекція з Програмування</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">8:30</h6>
+                <a href="#" id="link-to-meeting">Посилання на зустріч</a>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-bell'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Лекція з Програмування</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">8:30</h6>
+                <a href="#" id="link-to-meeting">Посилання на зустріч</a>
+              </div>
+            </div>
+          </li>
+          <li class="list-elem">
+            <div class="list-elem-icon">
+              <i class='bx bxs-bell'></i>
+            </div>
+            <div class="list-elem-text">
+              <h5 id="name-of-meeting" class="list-elem-title">Лекція з Програмування</h5>
+              <div class="list-elem-text-lower">
+                <h6 id="time-of-meeting" class="list-elem-subtitle">8:30</h6>
+                <a href="#" id="link-to-meeting">Посилання на зустріч</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
